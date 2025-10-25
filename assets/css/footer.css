@@ -1,0 +1,109 @@
+.footer-text {
+  font-size: medium;
+  text-align: center;
+}
+
+.social-midia a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.social-midia-img {
+  width: 24px;
+  height: 24px;
+}
+
+.social-midia-name {
+  font-size: 16px;
+}
+
+.social-midia-text {
+  font-size: medium;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.social-midia-icon {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #5b3a2931;
+  width: 80%;
+  margin: 20px auto;
+  border-radius: 2px;
+}
+
+.delivery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.delivery-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.delivery-icon-bolt {
+  width: 125px;
+  height: 75px;
+}
+
+.info {
+  padding: 8px 50px 32px 50px;
+}
+
+@media (min-width: 1024px) {
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
+    align-items: start;
+    justify-items: center;
+    text-align: left;
+    gap: 20px;
+    padding: 20px 50px;
+  }
+
+  .footer-container hr {
+    display: none; /* Esconde as linhas divisórias */
+  }
+
+  .social-midia-container,
+  .contacts-container,
+  .delivery-container {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+    .social-midia a {
+
+        margin-top: 30px;
+    }
+
+  .footer-text {
+    text-align: center;
+  }
+
+  .info {
+    text-align: center;
+    padding: 20px;
+  }
+}

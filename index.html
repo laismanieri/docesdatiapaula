@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Doces da Tia Paula</title>
+    <link rel="icon" type="image/png" href="/assets/img/logo-icon.png" />
 
     <!-- Normalize CSS -->
     <link
@@ -17,12 +18,21 @@
     <!-- Global CSS -->
     <link rel="stylesheet" href="assets/css/global.css" />
     <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/footer.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
   <body>
     <div class="main">
-      <header class="header">
-        <a href="#home"><img src="/assets/img/logo.png" alt="" class="logo" /></a>       
+      <header class="header" id="topo">
+        <a href="#home">
+          <img src="/assets/img/logo.png" alt="" class="logo" />
+        </a>
         <nav class="navbar">
           <div class="menu-icon" id="menuIcon">&#9776;</div>
           <ul class="nav-links" id="navLinks">
@@ -33,6 +43,113 @@
           </ul>
         </nav>
       </header>
+      <main>
+        <div class="teste"></div>
+        <div class="go-top">
+          <a href="#topo" id="topo">
+            <i class="fa-solid fa-chevron-up"></i>
+            <span> Voltar ao topo </span>
+          </a>
+        </div>
+      </main>
+      <footer class="footer" style="margin-top: 10px">
+        <div class="footer-container" style="padding-top: 10px">
+          <div class="social-midia-container">
+            <h1 class="footer-text">Siga-nos</h1>
+            <div class="social-midia">
+              <a
+                href="https://www.instagram.com/docesdatiapaula.tradicao/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  class="social-midia-img"
+                  src="/assets/icons/icons-instagram.png"
+                  alt="instagram-logo"
+                />
+                <span class="social-midia-name"> docesdatiapaula.tradicao</span>
+              </a>
+            </div>
+          </div>
+          <hr />
+
+          <div class="contacts-container" id="contato">
+            <h1 class="footer-text">Take-away: ligue-nos</h1>
+            <!-- <div class="social-midia">
+              <a
+                href="mailto:docesdatiapaula@gmail.com?subject=Pedido%20de%20Sobremesa&body=Olá,%20gostaria%20de%20fazer%20um%20pedido."
+              >
+                <img src="/assets/icons/icons-email.png" alt="email" />
+                <span class="social-midia-name">
+                  docesdatiapaula@gmail.com</span
+                >
+              </a>
+            </div> -->
+            <div class="social-midia">
+              <a href="tel:+351219219523">
+                <img src="/assets/icons/icons-telefone.png" alt="telefone" />
+                <span class="social-midia-name">+351 21 921 9523</span>
+              </a>
+            </div>
+          </div>
+          <hr />
+          <!--TODO Atualizar o link do app para direcionar a pagina do resturante -->
+          <div class="delivery-container">
+              <h1 class="footer-text">
+              Delivery: clique aqui <i class="fa-solid fa-chevron-down"></i>
+            </h1>
+            <div class="delivery">
+              <a
+                href="https://www.ubereats.com/pt"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  class="delivery-icon"
+                  src="/assets/icons/uber-eats.svg"
+                  alt="uber eats"
+                />
+              </a>
+              <a
+                href="https://bolt.eu/pt-pt/food/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  class="delivery-icon-bolt"
+                  src="/assets/icons/bolt-food.svg"
+                  alt="bolt food"
+                />
+              </a>
+              <a
+                href="https://glovoapp.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  class="delivery-icon"
+                  src="/assets/icons/glovo.svg"
+                  alt="Glovo"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="info">
+          <h1 class="footer-text" style="text-align: center">
+            2025 DOCES DA TIA PAULA
+            <br />
+            Todos os direitos reservados | Política de Privacidade | Termos de
+            Uso
+          </h1>
+          <h1 class="footer-text">
+            Feito com
+            <i class="fa-solid fa-heart"></i> por
+            <span style="color: #e3a738">Lais Manieri</span>
+          </h1>
+        </div>
+      </footer>
     </div>
     <script defer src="/js/main.js"></script>
   </body>

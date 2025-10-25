@@ -1,0 +1,25 @@
+.teste{
+    background-color: white;
+    height: 270px;
+}
+
+.main{
+    background-color: white;
+}
+
+.go-top{
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        cursor: pointer;
+        padding: 12px;
+        background-color: #e3a738b0;
+        font-size: medium;
+        text-align: center;
+        span, i{
+            background-color: #e3a73828;
+        }
+    }
+}

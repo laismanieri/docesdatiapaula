@@ -7,3 +7,8 @@
     color: #5b3a29;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
