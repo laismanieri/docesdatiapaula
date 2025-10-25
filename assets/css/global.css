@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Montserrat:wght@600;700&display=swap');
+
 * {
     box-sizing: border-box;
+    font-family: 'Lora', serif;
+    background-color: #f4e9d8;
+    color: #5b3a29;
 }
+
