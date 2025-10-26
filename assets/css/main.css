@@ -8,27 +8,19 @@
 
 .container div {
   text-align: center;
-  a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-  padding: 5px;
 }
 
-img {
-  width: 24px;
-  height: 24px;
+.container-itens {
+  padding: 16px 32px 0 32px;
+    img {
+    width: 24px;
+    height: 24px;
+  }
 }
 
-p {
-  margin: 0;
-  justify-content: center;
-  padding: 0;
-}
+.container-itens-img {
+    width: 24px;
+    height: 24px;
 }
 
 /* Faz a imagem ocupar toda a largura do container */
@@ -37,14 +29,6 @@ p {
   height: auto;
   display: block;
 }
-
-h1 {
-  font-size: medium;
-  text-align: center;
-  margin: 0;
-}
-
-
 
 .carousel-wrapper {
   position: relative;
