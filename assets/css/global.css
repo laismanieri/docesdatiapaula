@@ -11,4 +11,39 @@ html {
   scroll-behavior: smooth;
 }
 
+h1 {
+  font-size: medium;
+  text-align: center;
+  margin: 0;
+}
 
+a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  padding: 5px;
+}
+
+img {
+  width: 24px;
+  height: 24px;
+}
+
+p {
+  margin: 0;
+  justify-content: center;
+  padding: 0;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #5b3a2931;
+  width: 80%;
+  margin: auto;
+  border-radius: 2px;
+}
