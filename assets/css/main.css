@@ -1,25 +1,133 @@
-.teste{
-    background-color: white;
-    height: 270px;
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 5px;
+  background: #f4e9d8;
 }
 
-.main{
-    background-color: white;
+.container div {
+  text-align: center;
+  a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  padding: 5px;
+}
+
+img {
+  width: 24px;
+  height: 24px;
+}
+
+p {
+  margin: 0;
+  justify-content: center;
+  padding: 0;
+}
+}
+
+/* Faz a imagem ocupar toda a largura do container */
+.container div img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1 {
+  font-size: medium;
+  text-align: center;
+  margin: 0;
+}
+
+
+
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-container {
+  overflow: hidden;
+  flex: 1;
+  padding: 20px 30px;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+
+}
+
+.carousel-item {
+  flex: 0 0 50%; /* 2 por tela no mobile */
+  padding: 8px;
+}
+
+.carousel-item img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Botões */
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #5b3a29;
+  border: none;
+  font-size: 1rem;
+  padding: 0 12px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.carousel-prev {
+  left: 0;
+}
+.carousel-next {
+  right: 0;
 }
 
 .back-to-top {
-    a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        cursor: pointer;
-        padding: 12px;
-        background-color: #e3a738b0;
-        font-size: medium;
-        text-align: center;
-        span, i{
-            background-color: #e3a73828;
-        }
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 12px;
+    background-color: #e3a738b0;
+    font-size: medium;
+    text-align: center;
+    span,
+    i {
+      background-color: #e3a73828;
     }
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .carousel-item {
+    flex: 0 0 33.333%; /* 3 por tela */
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 70%; /* ocupa 70% da tela */
+    margin: 0 auto; /* centraliza horizontalmente */
+  }
+  .carousel-item {
+    flex: 0 0 25%; /* 4 por tela */
+  }
 }
