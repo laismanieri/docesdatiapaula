@@ -1,66 +1,85 @@
-footer{
-    background-color: #f4e9d8;
+.site-footer {
+  background-color: #f4e9d8;
 }
 
-.footer-container {
+.footer-wrapper {
   display: grid;
-  grid-template-columns: 1fr; 
+  grid-template-columns: 1fr;
   grid-template-rows: auto;
   gap: 1rem;
   padding: 16px;
 }
 
-.footer-item{
-    padding: 16px;
+.footer-section {
+  padding: 16px;
 }
 
-.footer-img {
+.footer-logo {
   width: 24px;
   height: 24px;
 }
 
-.delivery-content {
+.delivery-links {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
   cursor: pointer;
+}
 
-  .delivery-icon {
-    width: 50px;
-    height: 50px;
-  }
+.delivery-logo {
+  width: 50px;
+  height: 50px;
+}
 
-  .delivery-icon-bolt {
-    width: 125px;
-    height: 75px;
-  }
+.delivery-logo-bolt {
+  width: 125px;
+  height: 75px;
 }
 
 @media (min-width: 1024px) {
-  .footer-container {
+  .footer-wrapper {
     display: grid;
-    /* 6 colunas "pequenas" para podermos controlar spans */
     grid-template-columns: repeat(6, 1fr);
     grid-auto-rows: auto;
     gap: 2rem;
     padding: 24px 60px;
     align-items: start;
-    width: 80%;        /* ocupa 70% da tela */
-    margin: 0 auto;    /* centraliza horizontalmente */
+    width: 80%; /* ocupa 80% da tela */
+    margin: 0 auto; /* centraliza horizontalmente */
   }
-  /* top row: cada item ocupa 2 colunas (2/6 = 33.33%) */
-  .footer-item:nth-child(1) { grid-column: 1 / span 2; } /* Redes sociais */
-  .footer-item:nth-child(2) { grid-column: 3 / span 2; } /* Contatos */
-  .footer-item:nth-child(3) { grid-column: 5 / span 2; } /* Endereço */
 
-  /* bottom row: cada item ocupa 3 colunas (3/6 = 50%) */
-  .footer-item:nth-child(4) { grid-column: 1 / span 3; } /* Delivery */
-  .footer-item:nth-child(5) { grid-column: 4 / span 3; } /* Nossos Parceiros */
+  /* top row: itens divididos em spans de 2 colunas */
+  .footer-section:nth-child(1) {
+    grid-column: 1 / span 2;
+  } /* Redes sociais */
 
-  /* alinhamentos e estilo */
-  .footer-item { justify-self: start; }
-  .footer-item a { justify-content: flex-start; }
-  .footer-container hr { display: none; } /* se tiver <hr> internas */
+  .footer-section:nth-child(2) {
+    grid-column: 3 / span 2;
+  } /* Contatos */
+
+  .footer-section:nth-child(3) {
+    grid-column: 5 / span 2;
+  } /* Delivery */
+
+  /* bottom row: spans de 3 colunas */
+  .footer-section:nth-child(4) {
+    grid-column: 1 / span 3;
+  } /* Endereço */
+
+  .footer-section:nth-child(5) {
+    grid-column: 4 / span 3;
+  } /* Nossos Parceiros */
+
+  .footer-section {
+    justify-self: start;
+  }
+
+  .footer-section a {
+    justify-content: flex-start;
+  }
+
+  .footer-wrapper hr {
+    display: none; /* esconde hr internas */
+  }
 }
-

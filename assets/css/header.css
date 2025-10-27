@@ -1,46 +1,50 @@
-
-.header {
+.site-header {
   padding: 0.5rem 1rem;
   display: flex;
   justify-content: space-between;
   background-color: #f4e9d8;
 }
 
-.navbar {
+.main-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 10px;
 }
 
-.logo {
+.site-logo {
   width: 110px;
   height: 70px;
 }
 
-.menu-icon {
+.nav-toggle {
   font-size: 28px;
   cursor: pointer;
   display: none;
   background-color: #f4e9d8;
 }
 
-.nav-links .menu-item {
-  list-style: none;
-  justify-content: left;
+.nav-list{
+  margin-top: 2.2rem;
 }
 
-.nav-links a {
+.nav-list .nav-item {
+  list-style: none;
+  justify-content: left;
+  background-color: #f4e9d8;
+}
+.nav-list a {
   text-decoration: none;
   font-weight: bold;
 }
 
 /* Responsivo */
 @media (max-width: 768px) {
-  .menu-icon {
+  .nav-toggle {
     display: block;
   }
 
-  .nav-links {
+  .nav-list {
     padding: 0;
     position: absolute;
     top: 60px;
@@ -52,61 +56,61 @@
     transition: height 0.3s ease;
   }
 
-  .nav-links.open {
+  .nav-list.open {
     height: 180px;
   }
 
-  .nav-links .menu-item {
+  .nav-list .nav-item {
     text-align: center;
     padding: 10px 0;
   }
 }
 
 @media (min-width: 768px) {
-  .header {
+  .site-header {
     padding: 0.5rem;
     display: flex;
     justify-content: space-around;
   }
 
-  .menu-icon {
-    display: none; 
+  .nav-toggle {
+    display: none;
   }
 
-  .nav-links {
+  .nav-list {
     display: flex !important;
-    position: static; 
+    position: static;
     flex-direction: row;
     height: auto;
     width: auto;
   }
 
-  .nav-links .menu-item {
+  .nav-list .nav-item {
     padding: 0 1rem;
   }
 }
 
 /* Para desktops (≥1024px) */
 @media (min-width: 1024px) {
-  .header {
+  .site-header {
     padding: 0.5rem 1rem;
     display: flex;
     justify-content: space-around;
   }
 
-  .menu-icon {
-    display: none; 
+  .nav-toggle {
+    display: none;
   }
 
-  .nav-links {
+  .nav-list {
     display: flex !important;
-    position: static; 
+    position: static;
     flex-direction: row;
     height: auto;
     width: auto;
   }
 
-  .nav-links .menu-item {
+  .nav-list .nav-item {
     padding: 0 1rem;
   }
 }

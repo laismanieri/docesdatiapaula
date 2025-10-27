@@ -28,79 +28,76 @@
     />
   </head>
   <body>
-    <div class="main">
-      <header class="header" id="topo">
+    <div class="app-wrapper">
+      <header class="site-header" id="topo">
         <a href="#home">
-          <img src="/assets/img/logo.png" alt="" class="logo" />
+          <img src="/assets/img/logo.png" alt="Logo Doces da Tia Paula" class="site-logo" />
         </a>
-        <nav class="navbar">
-          <div class="menu-icon" id="menuIcon">&#9776;</div>
-          <ul class="nav-links" id="navLinks">
-            <li class="menu-item"><a href="#home">Início</a></li>
-            <li class="menu-item"><a href="#produtos">Produtos</a></li>
-            <li class="menu-item"><a href="#sobre">Sobre</a></li>
-            <li class="menu-item"><a href="#contato">Contato</a></li>
+        <nav class="main-nav">
+          <div class="nav-toggle" id="menuIcon">&#9776;</div>
+          <ul class="nav-list" id="navLinks">
+            <li class="nav-item"><a href="#home">Início</a></li>
+            <li class="nav-item"><a href="#produtos">Produtos</a></li>
+            <li class="nav-item"><a href="#sobre">Sobre</a></li>
+            <li class="nav-item"><a href="#contato">Contato</a></li>
           </ul>
         </nav>
       </header>
 
-      <main>
-        <div class="container">
-          <div class="banner" style="padding: 0">
-            <img src="/assets/img/banner.png" alt="" />
+      <main class="main-content">
+        <div class="page-container">
+          <div class="hero-banner" style="padding: 0">
+            <img src="/assets/img/banner.png" alt="Banner Doces da Tia Paula" />
           </div>
 
-          <div>
-            <section class="galeria">
-              <div class="carousel-wrapper">
-                <button class="carousel-prev">
-                  <i class="fa-solid fa-angle-left"></i>
-                </button>
-                <div class="carousel-container">
-                  <div class="carousel">
-                    <div class="carousel-item">
-                      <img src="assets/img/image.jpg" alt="Doce 1" />
-                    </div>
-                    <div class="carousel-item">
-                      <img src="assets/img/image5.jpg" alt="Doce 2" />
-                    </div>
-                    <div class="carousel-item">
-                      <img src="assets/img/image2.jpg" alt="Doce 3" />
-                    </div>
-                    <div class="carousel-item">
-                      <img src="assets/img/image3.png" alt="Doce 4" />
-                    </div>
-                    <div class="carousel-item">
-                      <img src="assets/img/image4.jpg" alt="Doce 5" />
-                    </div>
-                    <div class="carousel-item">
-                      <img src="assets/img/image5.png" alt="Doce 6" />
-                    </div>
-                    <div class="carousel-item">
-                      <img src="assets/img/image6.jpg" alt="Doce 7" />
-                    </div>
-                    <div class="carousel-item">
-                      <img src="assets/img/image7.jpg" alt="Doce 8" />
-                    </div>
+          <section class="gallery">
+            <div class="carousel-wrapper">
+              <button class="carousel-button-prev" aria-label="Slide anterior">
+                <i class="fa-solid fa-angle-left"></i>
+              </button>
+              <div class="carousel-view">
+                <div class="carousel">
+                  <div class="carousel-slide">
+                    <img src="assets/img/image.jpg" alt="Doce 1" />
+                  </div>
+                  <div class="carousel-slide">
+                    <img src="assets/img/image5.jpg" alt="Doce 2" />
+                  </div>
+                  <div class="carousel-slide">
+                    <img src="assets/img/image2.jpg" alt="Doce 3" />
+                  </div>
+                  <div class="carousel-slide">
+                    <img src="assets/img/image3.png" alt="Doce 4" />
+                  </div>
+                  <div class="carousel-slide">
+                    <img src="assets/img/image4.jpg" alt="Doce 5" />
+                  </div>
+                  <div class="carousel-slide">
+                    <img src="assets/img/image5.png" alt="Doce 6" />
+                  </div>
+                  <div class="carousel-slide">
+                    <img src="assets/img/image6.jpg" alt="Doce 7" />
+                  </div>
+                  <div class="carousel-slide">
+                    <img src="assets/img/image7.jpg" alt="Doce 8" />
                   </div>
                 </div>
-                <button class="carousel-next">
-                  <i class="fa-solid fa-angle-right"></i>
-                </button>
               </div>
-            </section>
-          </div>
+              <button class="carousel-button-next" aria-label="Próximo slide">
+                <i class="fa-solid fa-angle-right"></i>
+              </button>
+            </div>
+          </section>
 
-          <div class="container-itens">PRODUTOS</div>
+          <div class="section-container" id="produtos">PRODUTOS</div>
 
-          <div class="container-itens" style="background-color: #fff7ec">
-            <div style="background-color: #fff7ec">
+          <div class="section-container" style="background-color: #fff7ec">
+            <div class="order-info" style="background-color: #fff7ec">
               <h1>ENCOMENDAS</h1>
               <p>Take-away ou Delivery, do jeito que você prefere!</p>
               <div>
                 <p>
-                  Cada doce da Tia Paula é um convite: fresco, artesanal e
-                  impossível de resistir.
+                  Cada doce da Tia Paula é um convite: fresco, artesanal e impossível de resistir.
                 </p>
                 <p>Pronto para provar?</p>
               </div>
@@ -115,7 +112,7 @@
                   <img
                     style="width: auto; height: auto"
                     src="/assets/icons/icons-whatsapp.png"
-                    alt="whatsapp"
+                    alt="WhatsApp"
                   />
                   <span>+351 968 466 293</span>
                 </a>
@@ -125,7 +122,7 @@
                   <img
                     style="width: auto; height: auto"
                     src="/assets/icons/icons-telefone.png"
-                    alt="telefone"
+                    alt="Telefone"
                   />
                   <span>+351 21 921 9523</span>
                 </a>
@@ -133,22 +130,23 @@
               <br />
             </div>
           </div>
-          <div class="container-itens">
+
+          <div class="section-container">
             <div>
               <h1 style="color: #e3a738">Delivery</h1>
               <p>Quer receber nossos doces no conforto da sua casa?</p>
               <p>É fácil! Estamos nas principais apps de entrega:</p>
-              <div class="delivery-container">
-                <div class="delivery-content">
+              <div class="delivery-section">
+                <div class="delivery-links">
                   <a
                     href="https://www.ubereats.com/pt"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <img
-                      class="delivery-icon"
+                      class="delivery-logo"
                       src="/assets/icons/uber-eats.svg"
-                      alt="uber eats"
+                      alt="Uber Eats"
                     />
                   </a>
                   <a
@@ -157,9 +155,9 @@
                     rel="noopener noreferrer"
                   >
                     <img
-                      class="delivery-icon-bolt"
+                      class="delivery-logo-bolt"
                       src="/assets/icons/bolt-food.svg"
-                      alt="bolt food"
+                      alt="Bolt Food"
                     />
                   </a>
                   <a
@@ -168,35 +166,50 @@
                     rel="noopener noreferrer"
                   >
                     <img
-                      class="delivery-icon"
+                      class="delivery-logo"
                       src="/assets/icons/glovo.svg"
                       alt="Glovo"
                     />
                   </a>
                 </div>
-                <div class="delivery-image">
-                  <img src="/assets/img/package.jpg" alt="" />
+                <div class="delivery-image-wrapper">
+                  <img src="/assets/img/package.jpg" alt="Empacotamento de entrega" />
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="container-itens" style="background-color: #fff7ec">
-            SOBRE NÓS
+          <div class="section-container" style="background-color: #fff7ec">
+            <div class="about-section" id="sobre">
+              <div>
+                <h1>SOBRE NÓS</h1>
+                <p style="font-size: small">
+                  Tudo começou na cozinha da Tia Paula, onde cada receita era preparada com o mesmo carinho de quem cozinha para a família.
+                  O sabor conquistou os clientes do
+                  <span style="color: #e3a738">Frango Real</span>, e o que era apenas uma paixão virou tradição. Hoje,
+                  decidimos dar um passo além: levar essa doçura para ainda mais pessoas, com opções de take-away e delivery.
+                  Assim, você pode saborear os doces artesanais da Tia Paula — sempre fresquinhos, feitos com amor, ingredientes selecionados e aquele toque caseiro que faz toda a diferença.
+                  Porque, aqui, cada doce conta uma história… e todas começam com o mesmo segredo: carinho em cada detalhe.
+                </p>
+              </div>
+              <div class="about-image-wrapper">
+                <img class="about-image" src="/assets/img/tiapaula.jpg" alt="Foto Tia Paula" />
+              </div>
+            </div>
           </div>
         </div>
       </main>
 
-      <div class="back-to-top">
+      <div class="scroll-top">
         <a href="#topo" id="topo">
           <i class="fa-solid fa-chevron-up"></i>
           <span> Voltar ao topo </span>
         </a>
       </div>
 
-      <footer>
-        <div class="footer-container">
-          <div class="footer-item">
+      <footer class="site-footer">
+        <div class="footer-wrapper">
+          <div class="footer-section">
             <h1>Redes sociais</h1>
             <a
               href="https://www.instagram.com/docesdatiapaula.tradicao/"
@@ -204,15 +217,16 @@
               rel="noopener noreferrer"
             >
               <img
-                class="footer-icon"
+                class="footer-logo"
                 src="/assets/icons/icons-instagram.png"
-                alt="instagram-logo"
+                alt="Instagram"
               />
               <span> docesdatiapaula.tradicao</span>
             </a>
           </div>
 
-          <div class="footer-item">
+          <div class="footer-section" >
+            <div>
             <h1>Contatos</h1>
             <div>
               <a
@@ -220,60 +234,47 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="/assets/icons/icons-whatsapp.png" alt="whatsapp" />
+                <img src="/assets/icons/icons-whatsapp.png" alt="WhatsApp" />
                 <span>+351 968 466 293</span>
               </a>
             </div>
             <div>
               <a href="tel:+351219219523">
-                <img src="/assets/icons/icons-telefone.png" alt="telefone" />
+                <img src="/assets/icons/icons-telefone.png" alt="Telefone" />
                 <span>+351 21 921 9523</span>
               </a>
             </div>
             <div>
               <a
-                href="mailto:docesdatiapaula@gmail.com?subject=Pedido%20de%20Sobremesa&body=Olá,%20gostaria%20de%20fazer%20um%20pedido."
+                href="mailto:docesdatiapaula@gmail.com?subject=Pedido%20de%20Sobremesa&body=Olá,%20gostaria%20de%20fazer%20um%20um%20pedido."
               >
-                <img src="/assets/icons/icons-email.png" alt="email" />
+                <img src="/assets/icons/icons-email.png" alt="Email" />
                 <span> docesdatiapaula@gmail.com</span>
               </a>
             </div>
+            </div>
           </div>
 
-
-
-          <div class="footer-item">
+          <div class="footer-section" id="contato">
             <h1>Delivery</h1>
-            <div class="delivery-content">
-              <a
-                href="https://www.ubereats.com/pt"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+            <div class="delivery-links">
+              <a href="https://www.ubereats.com/pt" target="_blank" rel="noopener noreferrer">
                 <img
-                  class="delivery-icon"
+                  class="delivery-logo"
                   src="/assets/icons/uber-eats.svg"
-                  alt="uber eats"
+                  alt="Uber Eats"
                 />
               </a>
-              <a
-                href="https://bolt.eu/pt-pt/food/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="https://bolt.eu/pt-pt/food/" target="_blank" rel="noopener noreferrer">
                 <img
-                  class="delivery-icon-bolt"
+                  class="delivery-logo-bolt"
                   src="/assets/icons/bolt-food.svg"
-                  alt="bolt food"
+                  alt="Bolt Food"
                 />
               </a>
-              <a
-                href="https://glovoapp.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="https://glovoapp.com" target="_blank" rel="noopener noreferrer">
                 <img
-                  class="delivery-icon"
+                  class="delivery-logo"
                   src="/assets/icons/glovo.svg"
                   alt="Glovo"
                 />
@@ -281,10 +282,13 @@
             </div>
           </div>
 
-          <div class="footer-item">
+          <div class="footer-section">
             <h1>Endereço</h1>
             <h1>
-              <a href="https://frangoreal.com/#" style="color: #e3a738"
+              <a
+                href="https://frangoreal.com/#"
+                target="_blank"
+                style="color: #e3a738"
                 >Estamos localizados no Frango Real</a
               >
             </h1>
@@ -302,7 +306,7 @@
             </div>
           </div>
 
-          <div class="footer-item">
+          <div class="footer-section">
             <h1>Nossos Parceiros</h1>
             <h1 style="color: #e3a738; text-align: center">
               <a
@@ -313,9 +317,7 @@
             </h1>
             <div style="padding: 0 12px 5px 12px; text-align: justify">
               <p style="padding: 0 16px">
-                Agora, além das sobremesas artesanais irresistíveis, feitas com
-                aquele carinho que só a Tia Paula sabe dar, você pode iniciar
-                sua refeição com os melhores pratos portugueses
+                Agora, além das sobremesas artesanais irresistíveis, feitas com aquele carinho que só a Tia Paula sabe dar, você pode iniciar sua refeição com os melhores pratos portugueses
               </p>
             </div>
           </div>
@@ -327,10 +329,9 @@
           <h1 style="padding: 12px; line-height: 1.8">
             2025 DOCES DA TIA PAULA
             <br />
-            Todos os direitos reservados | Política de Privacidade | Termos de
-            Uso
+            Todos os direitos reservados | Política de Privacidade | Termos de Uso
           </h1>
-          <h1 class="footer-text">
+          <h1 class="footer-credit">
             Feito com
             <i class="fa-solid fa-heart"></i> por
             <span style="color: #e3a738">Lais Manieri</span>
