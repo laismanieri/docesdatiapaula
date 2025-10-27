@@ -61,9 +61,3 @@ hr {
   }
 }
 
-@media (min-width: 1024px) {
-  .back-to-top {
-    width: 70%; /* ocupa 70% da tela */
-    margin: 0 auto; /* centraliza horizontalmente */
-  }
-}

@@ -46,7 +46,7 @@ footer{
     gap: 2rem;
     padding: 24px 60px;
     align-items: start;
-        width: 80%;        /* ocupa 70% da tela */
+    width: 80%;        /* ocupa 70% da tela */
     margin: 0 auto;    /* centraliza horizontalmente */
   }
   /* top row: cada item ocupa 2 colunas (2/6 = 33.33%) */
