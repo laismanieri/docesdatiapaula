@@ -7,9 +7,11 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  gap: 1rem;
   padding: 20px;
+}
 
+.footer-section{
+  padding: 16px 0;
 }
 
 .footer-section h1 {
@@ -22,7 +24,7 @@
   height: 20px;
 }
 
-.footer-logo-email{
+.footer-logo-email {
   width: 24px;
   height: 24px;
 }
@@ -55,64 +57,93 @@
 .delivery-logo-bolt {
   width: 81px;
   height: 26px;
-} 
+}
 
-.footer-credit{
-  padding: 16px 32px; 
+.footer-credit {
+  padding: 16px 32px;
   line-height: 1.8;
   text-align: center;
   p {
     font-size: 12px;
   }
-
 }
 
 /* TODO arrumar o footer */
+@media (min-width: 768px) {
+  .footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: center;
+    gap: 48px;
+    h1, p, span{
+    font-size: .9rem;
+    }
+  }
+  .footer-row-full {
+    display: block;
+    width: 100%;
+  }
+  
+  .footer-section {
+    flex: 1 1 0;
+    min-width: 200px;
+    max-width: 50%;
+    padding: 0 22px 12px 22px;
+    font-size: 1.1rem;
+  }
+  .footer-row.footer-row-full {
+    display: block;
+    width: 100%;
+  }
+  .footer-row.footer-row-full .footer-section {
+    max-width: 100% !important;
+    width: 100% !important;
+    flex: none !important;
+    margin: 0 auto;
+    display: block;
+    P{
+      text-align: center;
+    }
+  }
+}
+
+
 /* Telas acima de 1024px */
 @media (min-width: 1024px) {
-.footer-wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 36px;
-  padding: 32px 0;
-  width: 65%;
-  margin: 0 auto;
-  background: #f4e9d8;
-}
-
-.footer-section {
-  font-size: 16px;
-  line-height: 1.8;
-  padding: 18px 0;
-}
-
-.footer-logo, .delivery-logo {
-  width: 38px; height: 38px; margin-right: 8px;
-}
-
-.footer-section h1 {
-  font-size: 18px;
-  color: #e3a738;
-  font-family: 'Montserrat', sans-serif;
-  margin-bottom: 14px;
-}
-
-.footer-credit, .copyright {
-  text-align: center;
-  padding: 28px 0 12px;
-  font-size: 17px;
-  color: #5b3a29;
-}
 
 }
 
 /* Telas bem largas */
 @media (min-width: 1440px) {
   .footer-wrapper {
-    gap: 48px;
+    max-width: 1200px;
     width: 60%;
-  }
-  .footer-section {
+    margin-left: auto;
+    margin-right: auto;
+    gap: 16px;
+    padding: 36px 0;
+    background: #f4e9d8;
+    h1, p, span{
     font-size: 1.1rem;
+    }
   }
+  .footer-row {
+    gap: 32px;
+  }
+  .footer-row-full .footer-section {
+    min-width: 320px;
+    padding: 0 32px;
+    box-sizing: border-box;
+    text-align: center; 
+  }
+
+.delivery-logo {
+  width: 50px;
+  height: 50px;
+}
+.delivery-logo-bolt {
+  width: 101px;
+  height: 36px;
+}
 }
