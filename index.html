@@ -31,7 +31,11 @@
     <div class="app-wrapper">
       <header class="site-header" id="topo">
         <a href="#home">
-          <img src="/assets/img/logo.png" alt="Logo Doces da Tia Paula" class="site-logo" />
+          <img
+            src="/assets/img/logo.png"
+            alt="Logo Doces da Tia Paula"
+            class="site-logo"
+          />
         </a>
         <nav class="main-nav">
           <div class="nav-toggle" id="menuIcon">&#9776;</div>
@@ -45,12 +49,15 @@
       </header>
 
       <main class="main-content">
-        <div class="page-container">
+        <div class="page-container" id="home">
           <div class="hero-banner" style="padding: 0">
             <img src="/assets/img/banner.png" alt="Banner Doces da Tia Paula" />
           </div>
 
           <section class="gallery">
+            <div class="carousel-cta">
+              <span>Escolha sua sobremesa favorita!</span>
+            </div>
             <div class="carousel-wrapper">
               <button class="carousel-button-prev" aria-label="Slide anterior">
                 <i class="fa-solid fa-angle-left"></i>
@@ -94,87 +101,82 @@
           <div class="section-container" style="background-color: #fff7ec">
             <div class="order-info" style="background-color: #fff7ec">
               <h1>ENCOMENDAS</h1>
-              <p>Take-away ou Delivery, do jeito que você prefere!</p>
+              <p>
+                Take-away ou Delivery, do jeito que você prefere! Cada doce da
+                Tia Paula é um convite: fresco, artesanal e impossível de
+                resistir.Pronto para provar?
+              </p>
+
               <div>
-                <p>
-                  Cada doce da Tia Paula é um convite: fresco, artesanal e impossível de resistir.
-                </p>
-                <p>Pronto para provar?</p>
-              </div>
-              <div>
-                <br />
-                <span>Faça sua encomenda Take-away:</span>
+                <p style="color: #e3a738; margin-top: 10px; font-weight: 700;">Clique e encomende seu Take-away!</p>
                 <a
-                  href="https://wa.me/351968466293?text=Olá,%20gostaria%20de%20fazer%20um%20pedido."
+                  href="https://wa.me/351968466293"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  class="cta-btn-take-away"
                 >
                   <img
-                    style="width: auto; height: auto"
                     src="/assets/icons/icons-whatsapp.png"
                     alt="WhatsApp"
+                    class="clicable-icon"
                   />
-                  <span>+351 968 466 293</span>
+                  <span>Pedir no WhatsApp</span>
                 </a>
-              </div>
-              <div>
-                <a href="tel:+351219219523">
+                <a href="tel:+351219219523" class="cta-btn-take-away">
                   <img
-                    style="width: auto; height: auto"
                     src="/assets/icons/icons-telefone.png"
                     alt="Telefone"
+                    class="clicable-icon"
                   />
-                  <span>+351 21 921 9523</span>
+                  <span>Ligar agora</span>
                 </a>
               </div>
               <br />
             </div>
           </div>
 
-          <div class="section-container">
-            <div>
-              <h1 style="color: #e3a738">Delivery</h1>
-              <p>Quer receber nossos doces no conforto da sua casa?</p>
-              <p>É fácil! Estamos nas principais apps de entrega:</p>
-              <div class="delivery-section">
-                <div class="delivery-links">
+          <div class="section-container" id="delivery">
+            <h1>DELIVERY</h1>
+            <p>
+              Quer receber nossos doces no conforto da sua casa? É fácil!
+              Estamos nas principais apps de entrega.
+            </p>
+
+            <div class="delivery-section">
+              <div class="delivery-links-main">
+                <p style="color: #e3a738; font-weight: 700">Clique e encomende agora!</p>
+                <div>
                   <a
                     href="https://www.ubereats.com/pt"
                     target="_blank"
-                    rel="noopener noreferrer"
+                    class="cta-btn"
                   >
-                    <img
-                      class="delivery-logo"
-                      src="/assets/icons/uber-eats.svg"
-                      alt="Uber Eats"
-                    />
+                    <span>Uber Eats</span>
                   </a>
+                </div>
+                <div>
                   <a
                     href="https://bolt.eu/pt-pt/food/"
                     target="_blank"
-                    rel="noopener noreferrer"
+                    class="cta-btn"
                   >
-                    <img
-                      class="delivery-logo-bolt"
-                      src="/assets/icons/bolt-food.svg"
-                      alt="Bolt Food"
-                    />
+                    <span>Bolt Food</span>
                   </a>
+                </div>
+                <div>
                   <a
                     href="https://glovoapp.com"
                     target="_blank"
-                    rel="noopener noreferrer"
+                    class="cta-btn"
                   >
-                    <img
-                      class="delivery-logo"
-                      src="/assets/icons/glovo.svg"
-                      alt="Glovo"
-                    />
+                    <span>Glovo</span>
                   </a>
                 </div>
-                <div class="delivery-image-wrapper">
-                  <img src="/assets/img/package.jpg" alt="Empacotamento de entrega" />
-                </div>
+              </div>
+              <div class="delivery-image-wrapper">
+                <img
+                  src="/assets/img/package.jpg"
+                  alt="Empacotamento de entrega"
+                />
               </div>
             </div>
           </div>
@@ -183,25 +185,43 @@
             <div class="about-section" id="sobre">
               <div>
                 <h1>SOBRE NÓS</h1>
-                <p style="font-size: small">
-                  Tudo começou na cozinha da Tia Paula, onde cada receita era preparada com o mesmo carinho de quem cozinha para a família.
-                  O sabor conquistou os clientes do
-                  <span style="color: #e3a738">Frango Real</span>, e o que era apenas uma paixão virou tradição. Hoje,
-                  decidimos dar um passo além: levar essa doçura para ainda mais pessoas, com opções de take-away e delivery.
-                  Assim, você pode saborear os doces artesanais da Tia Paula — sempre fresquinhos, feitos com amor, ingredientes selecionados e aquele toque caseiro que faz toda a diferença.
-                  Porque, aqui, cada doce conta uma história… e todas começam com o mesmo segredo: carinho em cada detalhe.
+                <p class="about-paragrafy">
+                  Doces da Tia Paula nasceu do carinho de cozinhar para a
+                  família. O sabor conquistou clientes do
+                  <span style="color: #e3a738">Frango Real</span> e virou
+                  tradição. Agora, levamos essa doçura artesanal para mais
+                  pessoas, com opções de take-away e delivery. Cada doce é feito
+                  com amor, ingredientes selecionados e toque caseiro — aqui,
+                  cada receita conta uma história, sempre marcada pelo cuidado
+                  nos detalhes
                 </p>
               </div>
               <div class="about-image-wrapper">
-                <img class="about-image" src="/assets/img/tiapaula.jpg" alt="Foto Tia Paula" />
+                <img
+                  class="about-image"
+                  src="/assets/img/tiapaula.jpg"
+                  alt="Foto Tia Paula"
+                />
               </div>
+            </div>
+          </div>
+          <div class="section-container">
+            <div
+              class="social-proof"
+              style="margin: 32px 0; text-align: center"
+            >
+              <h1>DEPOIMENTOS</h1>
+              <p>
+                Site novo, vendas começando! Em breve teremos depoimentos de
+                clientes apaixonados pelos nossos doces.
+              </p>
             </div>
           </div>
         </div>
       </main>
 
       <div class="scroll-top">
-        <a href="#topo" id="topo">
+        <a href="#home" id="home">
           <i class="fa-solid fa-chevron-up"></i>
           <span> Voltar ao topo </span>
         </a>
@@ -212,6 +232,7 @@
           <div class="footer-section">
             <h1>Redes sociais</h1>
             <a
+              class="cta-btn-footer"
               href="https://www.instagram.com/docesdatiapaula.tradicao/"
               target="_blank"
               rel="noopener noreferrer"
@@ -225,54 +246,86 @@
             </a>
           </div>
 
-          <div class="footer-section" >
+          <div class="footer-section">
             <div>
-            <h1>Contatos</h1>
-            <div>
-              <a
-                href="https://wa.me/351968466293?text=Olá,%20gostaria%20de%20fazer%20um%20pedido."
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src="/assets/icons/icons-whatsapp.png" alt="WhatsApp" />
-                <span>+351 968 466 293</span>
-              </a>
-            </div>
-            <div>
-              <a href="tel:+351219219523">
-                <img src="/assets/icons/icons-telefone.png" alt="Telefone" />
-                <span>+351 21 921 9523</span>
-              </a>
-            </div>
-            <div>
-              <a
-                href="mailto:docesdatiapaula@gmail.com?subject=Pedido%20de%20Sobremesa&body=Olá,%20gostaria%20de%20fazer%20um%20um%20pedido."
-              >
-                <img src="/assets/icons/icons-email.png" alt="Email" />
-                <span> docesdatiapaula@gmail.com</span>
-              </a>
-            </div>
+              <h1>Contatos</h1>
+              <div>
+                <a
+                  class="cta-btn-footer"
+                  href="https://wa.me/351968466293?text=Olá,%20gostaria%20de%20fazer%20um%20pedido."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    class="footer-logo"
+                    src="/assets/icons/icons-whatsapp.png"
+                    alt="WhatsApp"
+                  />
+                  <span>+351 968 466 293</span>
+                </a>
+              </div>
+              <div>
+                <a class="cta-btn-footer" href="tel:+351219219523">
+                  <img
+                    class="footer-logo"
+                    src="/assets/icons/icons-telefone.png"
+                    alt="Telefone"
+                  />
+                  <span>+351 21 921 9523</span>
+                </a>
+              </div>
+              <div>
+                <a
+                  class="cta-btn-footer"
+                  href="mailto:docesdatiapaula@gmail.com?subject=Pedido%20de%20Sobremesa&body=Olá,%20gostaria%20de%20fazer%20um%20um%20pedido."
+                >
+                  <img
+                    class="footer-logo-email"
+                    src="/assets/icons/icons-email.png"
+                    alt="Email"
+                  />
+                  <span> docesdatiapaula@gmail.com</span>
+                </a>
+              </div>
             </div>
           </div>
 
           <div class="footer-section" id="contato">
             <h1>Delivery</h1>
             <div class="delivery-links">
-              <a href="https://www.ubereats.com/pt" target="_blank" rel="noopener noreferrer">
+              <a
+                class="cta-btn-footer"
+                href="https://www.ubereats.com/pt"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img
                   class="delivery-logo"
                   src="/assets/icons/uber-eats.svg"
                   alt="Uber Eats"
                 />
               </a>
-              <a href="https://bolt.eu/pt-pt/food/" target="_blank" rel="noopener noreferrer">
-                <img
-                  class="delivery-logo-bolt"
-                  src="/assets/icons/bolt-food.svg"
-                  alt="Bolt Food"
-                />
+              <a
+                class="cta-btn-footer"
+                class="delivery-btn-bolt"
+                href="https://bolt.eu/pt-pt/food/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div>
+                  <img
+                    class="delivery-logo-bolt"
+                    src="/assets/icons/bolt-food.png"
+                    alt="Bolt Food"
+                  />
+                </div>
               </a>
-              <a href="https://glovoapp.com" target="_blank" rel="noopener noreferrer">
+              <a
+                class="cta-btn-footer"
+                href="https://glovoapp.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img
                   class="delivery-logo"
                   src="/assets/icons/glovo.svg"
@@ -286,6 +339,7 @@
             <h1>Endereço</h1>
             <h1>
               <a
+                class="cta-btn-footer"
                 href="https://frangoreal.com/#"
                 target="_blank"
                 style="color: #e3a738"
@@ -294,6 +348,7 @@
             </h1>
             <div style="padding: 0; margin: 0">
               <a
+                class="cta-btn-footer"
                 href="https://www.google.com/maps?q=Av.+dos+Bombeiros+Voluntários,+19,+Sintra,+Portugal+2725-592"
                 target="_blank"
               >
@@ -310,14 +365,17 @@
             <h1>Nossos Parceiros</h1>
             <h1 style="color: #e3a738; text-align: center">
               <a
+                class="cta-btn-footer"
                 href="https://frangoreal.com/#"
                 style="color: #e3a738; display: inline-block"
                 >Frango Real</a
               >
             </h1>
             <div style="padding: 0 12px 5px 12px; text-align: justify">
-              <p style="padding: 0 16px">
-                Agora, além das sobremesas artesanais irresistíveis, feitas com aquele carinho que só a Tia Paula sabe dar, você pode iniciar sua refeição com os melhores pratos portugueses
+              <p style="padding: 0 16px; font-size: 14px">
+                Agora, além das sobremesas artesanais irresistíveis, feitas com
+                aquele carinho que só a Tia Paula sabe dar, você pode iniciar
+                sua refeição com os melhores pratos portugueses
               </p>
             </div>
           </div>
@@ -325,17 +383,19 @@
 
         <hr />
 
-        <div style="text-align: center; padding: 16px 16px 32px 16px">
-          <h1 style="padding: 12px; line-height: 1.8">
-            2025 DOCES DA TIA PAULA
-            <br />
-            Todos os direitos reservados | Política de Privacidade | Termos de Uso
-          </h1>
-          <h1 class="footer-credit">
-            Feito com
-            <i class="fa-solid fa-heart"></i> por
-            <span style="color: #e3a738">Lais Manieri</span>
-          </h1>
+        <div class="footer-credit">
+          <p>2025 DOCES DA TIA PAULA</p>
+          <p>
+            Todos os direitos reservados | Política de Privacidade | Termos de
+            Uso
+          </p>
+          <a class="cta-btn-footer" href="https://github.com/laismanieri">
+            <p>
+              Feito com
+              <i class="fa-solid fa-heart"></i> por
+              <span style="color: #e3a738">Lais Manieri </span>
+            </p></a
+          >
         </div>
       </footer>
     </div>

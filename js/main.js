@@ -22,6 +22,8 @@ nextBtn.addEventListener('click', () => {
   const visible = Math.floor(carousel.parentElement.offsetWidth / carousel.querySelector('.carousel-slide').offsetWidth);
   if (index < items - visible) {
     index++;
+  } else {
+    index = 0; // volta para o início quando chega no fim
   }
   updateCarousel();
 });
