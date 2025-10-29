@@ -46,12 +46,13 @@
   position: relative;
   display: flex;
   align-items: center;
+  overflow: visible;
 }
 
 .carousel-view {
   overflow: hidden;
   flex: 1;
-  padding: 20px 30px;
+  padding: 20px 8px;
 }
 
 .carousel {
@@ -79,22 +80,15 @@
   border-radius: 50%;
   border: none;
   cursor: pointer;
-  transition: background 0.2s, transform 0.2s;
-  margin: 0 8px;
+  transition: font-size 0.2s, transform 0.2s;
+  margin: 0;
 }
 .carousel-button-prev:hover,
 .carousel-button-next:hover {
-    font-size: 2.5rem;
-  transform: scale(1.05);
-  box-shadow: 0 2px 10px #e3a73840;
+  transform: scale(1.18);
 }
-.carousel-button-prev {
-  left: 0;
-}
-
-.carousel-button-next {
-  right: 0;
-}
+.carousel-button-prev { left: 16px; }
+.carousel-button-next { right: 16px; }
 
 
 
